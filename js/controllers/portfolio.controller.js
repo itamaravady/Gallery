@@ -72,5 +72,8 @@ function submitContact() {
 
 
     const strHref = `https://mail.google.com/mail/?view=cm&fs=1&to=itamaravady@gmail.com&su=${subject}&body=${body}`;
+    $('#emailInput').val('');
+    $('#subjectInput').val('');
+    $('#bodyInput').val('')
     window.open(strHref);
 }

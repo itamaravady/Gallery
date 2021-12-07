@@ -824,12 +824,6 @@ fieldset[disabled] .btn-primary:hover {
     background-color: rgb(50, 95, 179);
 }
 
-/* .btn-proj-url:hover {
-    color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
-} */
-
 .btn-proj-url.active,
 .btn-proj-url:active,
 .open>.btn-proj-url.dropdown-toggle {
