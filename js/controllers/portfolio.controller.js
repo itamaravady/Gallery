@@ -55,7 +55,7 @@ function renderModal(projId) {
 
     elModal.children('h2:first-child').text(proj.name);
     elModal.children('.item-intro').text(proj.title);
-    elModal.children('.img-fluid').text(proj.imgUrl);
+    elModal.children('.img-fluid').attr('src', proj.imgUrl);
     elModal.children('p.modal-desc').text(proj.desc);
     elModal.children('.btn-proj-url').attr('href', proj.url);
     const timestamp = new Date(proj.publishedAt)
@@ -74,6 +74,6 @@ function submitContact() {
     const strHref = `https://mail.google.com/mail/?view=cm&fs=1&to=itamaravady@gmail.com&su=${subject}&body=${body}`;
     $('#emailInput').val('');
     $('#subjectInput').val('');
-    $('#bodyInput').val('')
+    $('#bodyInput').val('');
     window.open(strHref);
 }
